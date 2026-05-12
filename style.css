@@ -1,0 +1,109 @@
+body{
+    width: 1000px;
+    background: linear-gradient(45deg, aqua, teal, aquamarine, cyan, darkcyan);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    box-sizing: border-box;
+}
+header div{
+    width: 80%;
+    float: left;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+header img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar{
+    clear: both;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li{
+    float: left;
+    font-size: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.navbar li:hover{
+    background-color: cadetblue;
+}
+
+.navbar a{
+    display: block;
+    padding: 10px;
+}
+
+.navbar a:visited{
+    color: blue;
+}
+
+main{
+    clear: both;
+}
+
+main aside{
+    float: left;
+    width: 30%;
+}
+
+main aside ul{
+    list-style-type: none;
+    margin-right: 80px;
+}
+
+main aside li{
+    font-size: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.subList{
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+aside li:hover{
+    background-color: cadetblue;
+}
+
+aside a{
+    display: block;
+    padding: 10px;
+}
+
+aside a:visited{
+    color: blue;
+}
+
+.subList a{
+    display: block;
+    padding: 10px;
+}
+
+#infoScreen{
+    border: 1px solid;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    width: 60%;
+    height: 450px;
+    padding: 10px;
+    overflow: auto;
+}
