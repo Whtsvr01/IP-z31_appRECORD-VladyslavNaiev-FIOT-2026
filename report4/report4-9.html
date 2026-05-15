@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report4-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report4-2.html">Завдання 1</a></li>
+                <li><a href="report4-3.html">Завдання 2</a></li>
+                <li><a href="report4-4.html">Завдання 3</a></li>
+                <li><a href="report4-5.html">Завдання 4</a></li>
+                <li><a href="report4-6.html">Завдання 5</a></li>
+                <li><a href="report4-7.html">Завдання 6</a></li>
+                <li><a href="report4-8.html">Завдання 7</a></li>
+                <li><a href="report4-9.html">Завдання 8</a></li>
+                <li><a href="report4-10.html">Завдання 9</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <h4 style="text-align: center;">Javascript</h4>
+            <pre><code>
+let multiArr = []
+let originalArr = []
+let size = Math.floor(Math.random() * 10) + 5;
+
+for (let i = 0; i &lt; 2; i++){
+    let arr = [];
+    for (let i = 0; i &lt; size; i++){
+        arr.push(Math.floor(Math.random() * 21) - 10);
+    }
+    multiArr.push(arr);
+    originalArr.push(Array.from(arr));
+}
+
+
+let first = multiArr[0][0];
+let last = multiArr[1][size-1];
+
+multiArr[0].splice(1, 0, 25);
+
+alert(&quot;Original array was: \n&quot; + originalArr[0] + &quot;\n&quot; + originalArr[1] + &quot;\nArray after is: \n&quot; + multiArr[0] + &quot;\n&quot; + multiArr[1] + &quot;\nFirst element is: &quot; + first + &quot;\nLast element is &quot; + last);
+            </code></pre>
+            <h4 style="text-align: center;">Скріншоти</h4>
+            <img src="imgs4/15.png">
+        </section>
+    </main>
+</body>
+</html>

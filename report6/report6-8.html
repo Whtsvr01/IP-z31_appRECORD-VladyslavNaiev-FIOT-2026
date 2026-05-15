@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report6-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report6-2.html">Завдання 2</a></li>
+                <li><a href="report6-3.html">Завдання 4</a></li>
+                <li><a href="report6-4.html">Завдання 6</a></li>
+                <li><a href="report6-5.html">Завдання 7</a></li>
+                <li><a href="report6-6.html">Завдання 8</a></li>
+                <li><a href="report6-7.html">Завдання 9</a></li>
+                <li><a href="report6-8.html">Завдання 10</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <h4 style="text-align: center;">Javascript</h4>
+            <pre><code>
+const createButton = document.querySelector(&quot;[data-create]&quot;);
+const destroyButton = document.querySelector(&quot;[data-destroy]&quot;);
+const boxContainer = document.querySelector(&quot;#boxes&quot;);
+createButton.addEventListener(&quot;click&quot;, event =&gt;{
+    let index = document.querySelector(&quot;input[type='number']&quot;).value;
+    if (0 &lt; index &amp;&amp; index &lt;= 100){
+        for (let i = 0; i &lt;= index; i++){
+            let col = getRandomHexColor();
+            let newBox = document.createElement(&quot;div&quot;);
+            newBox.style.height = 30 + (i*10) + &quot;px&quot;;
+            newBox.style.width = 30 + (i*10) + &quot;px&quot;;
+            newBox.style.background = col;
+            boxContainer.appendChild(newBox);
+        }
+    }
+});
+
+destroyButton.addEventListener(&quot;click&quot;, event =&gt;{
+    boxContainer.innerHTML = &quot;&quot;;
+});
+
+function getRandomHexColor(){
+    return `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, 0)}`;
+}
+            </code></pre>
+
+            <h4 style="text-align: center;">HTML</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style=&quot;background-color: green; padding: 15px; border: 3px solid black;&quot;&gt;
+        &lt;div id=&quot;controls&quot;&gt;
+            &lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;1&quot;&gt;
+            &lt;button type=&quot;button&quot; data-create&gt;Create&lt;/button&gt;
+            &lt;button type=&quot;button&quot; data-destroy&gt;Destroy&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;boxes&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;              
+            </code></pre>
+            
+            <h4 style="text-align: center;">Скріншоти</h4>
+            <img src="imgs6/12.png">
+        </section>
+    </main>
+</body>
+</html>

@@ -32,18 +32,40 @@
     <main>
         <aside>
             <ul>
-                <li><a href="report2-1.html">Тема, мета, місце розташування</a></li>
-                <li><a href="report2-2.html">Способи підключення стилів</a></li>
-                <li><a href="report2-3.html">СЕЛЕКТОРИ</a></li>
-                <li class="subList"><a href="report2-3-1.html">Тегу</a></li>
-                <li class="subList"><a href="report2-3-2.html">Класу</a></li>
-                <li class="subList"><a href="report2-3-3.html">Ідентиф.</a></li>
-                <li class="subList"><a href="report2-3-4.html">Інші</a></li>
-                <li><a href="report2-5.html">Висновки</a></li>
+                <li><a href="report5-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report5-2.html">Завдання 1-2</a></li>
+                <li><a href="report5-3.html">Завдання 1-4</a></li>
+                <li><a href="report5-4.html">Завдання 1-6</a></li>
+                <li><a href="report5-5.html">Завдання 1-8</a></li>
+                <li><a href="report5-6.html">Завдання 1-9</a></li>
+                <li><a href="report5-7.html">Завдання 1-10</a></li>
+                <li><a href="report5-8.html">Завдання 2-2</a></li>
+                <li><a href="report5-9.html">Завдання 2-4</a></li>
+                <li><a href="report5-10.html">Завдання 2-6</a></li>
+                <li><a href="report5-11.html">Завдання 2-7</a></li>
             </ul>
         </aside>
 
         <section id="infoScreen">
+            <h4 style="text-align: center;">Javascript</h4>
+            <pre><code>
+const concerts = {
+    Kyiv: new Date(&quot;2020-04-01&quot;),
+    Uman: new Date(&quot;2026-07-02&quot;),
+    Vinnytsia: new Date(&quot;2020-04-21&quot;),
+    Odesa: new Date(&quot;2026-06-15&quot;),
+    Khmelnytskyi: new Date(&quot;2020-04-18&quot;),
+    Kharkiv: new Date(&quot;2026-07-10&quot;),
+}
+
+let names = Object.keys(concerts);
+names = names.filter(name =&gt; concerts[name] &gt; new Date());
+names = names.sort((name1, name2) =&gt; concerts[name1] - concerts[name2]);
+alert(names);
+            </code></pre>                
+        
+            <h4 style="text-align: center;">Скріншоти</h4>
+            <img src="imgs5/3.png">
         </section>
     </main>
 </body>

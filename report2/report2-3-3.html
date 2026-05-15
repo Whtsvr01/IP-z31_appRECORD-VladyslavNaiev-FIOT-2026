@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report2-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report2-2.html">Способи підключення стилів</a></li>
+                <li><a href="report2-3.html">СЕЛЕКТОРИ</a></li>
+                <li class="subList"><a href="report2-3-1.html">Тегу</a></li>
+                <li class="subList"><a href="report2-3-2.html">Класу</a></li>
+                <li class="subList"><a href="report2-3-3.html">Ідентиф.</a></li>
+                <li class="subList"><a href="report2-3-4.html">Інші</a></li>
+                <li><a href="report2-5.html">Висновки</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <h4 style="text-align: center;">Використані селектори ідентифікаторів</h4>
+            <h4 style="text-align: center;">CSS</h4>
+            <pre><code>
+#pageName{
+    text-align: center;
+}
+#NiceBakery{
+    color: #B77466;
+    text-shadow: -3px -3px 3px #E2B59A, 3px 3px 3px #E2B59A;
+    font-family: 'Brush Script MT';
+    font-size: larger;
+}
+#pricingTable{
+    background-color: #400c02;
+}
+
+#infoTable{
+    background-color: #B77466;
+}
+#scheduleTable{
+    background-color: #400c02;
+}
+            </code></pre>
+            <h4 style="text-align: center;">HTML (приклад)</h4>
+            <pre><code>
+            &lt;table id=&quot;pricingTable&quot; bgcolor=&quot;black&quot;&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; id=&quot;infoTable&quot;&gt;Ocassion/Filling&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Cherry&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Orange&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Strawberry&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Blueberry&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Banana&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Chocolate&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Nuts&lt;/th&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;fillingTable&quot;&gt;Special&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;occasionTable&quot;&gt;Wedding&lt;/th&gt;
+                    &lt;td width=&quot;100&quot;&gt;200$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;190$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;200$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;250$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;150$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;240$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;230$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+300$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;occasionTable&quot;&gt;Birthday&lt;/th&gt;
+                    &lt;td width=&quot;100&quot;&gt;100$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;90$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;100$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;150$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;50$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;140$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;130$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+200$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;occasionTable&quot;&gt;Graduation&lt;/th&gt;
+                    &lt;td width=&quot;100&quot;&gt;125$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;115$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;125$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;175$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;65$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;175$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;155$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+225$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;occasionTable&quot;&gt;Party&lt;/th&gt;
+                    &lt;td width=&quot;100&quot;&gt;180$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;170$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;180$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;230$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;130$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;220$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot;&gt;210$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+280$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;100&quot; class=&quot;occasionTable&quot;&gt;Special&lt;/th&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+250$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+240$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+250$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+300$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+200$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+290$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+270$&lt;/td&gt;
+                    &lt;td width=&quot;100&quot; class=&quot;specialPrice&quot;&gt;+350$&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            </code></pre>
+            <h4 style="text-align: center;">Скріншот (приклад)</h4>
+            <img src="imgs2/3.png">
+        </section>
+    </main>
+</body>
+</html>

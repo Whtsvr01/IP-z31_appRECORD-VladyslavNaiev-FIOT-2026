@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report3-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report3-2.html">Завдання 1</a></li>
+                <li><a href="report3-3.html">Завдання 2</a></li>
+                <li class="subList"><a href="report3-3-1.html">Фікс. табл.</a></li>
+                <li class="subList"><a href="report3-3-2.html">Гумова табл.</a></li>
+                <li class="subList"><a href="report3-3-3.html">Фікс. блок.</a></li>
+                <li class="subList"><a href="report3-3-4.html">Гумова блок.</a></li>
+                <li><a href="report3-5.html">Висновки</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <div>
+<h2>1. Фіксована таблична верстка</h2>
+<table style="width:600px; border-collapse:collapse; table-layout:fixed;">
+  <tr>
+    <td rowspan="3" style="width:120px; background:orange; text-align:center; vertical-align:middle; color:white;">2</td>
+    <td style="background:blue; color:white; padding:10px; height:50px;">1</td>
+    <td rowspan="3" style="width:20px; background:white;"></td>
+  </tr>
+  <tr>
+    <td style="background:white; text-align:center; vertical-align:middle; color:grey; height:180px;">4</td>
+  </tr>
+  <tr>
+    <td style="background:blue; color:white; padding:10px; height:50px;">3</td>
+  </tr>
+</table>
+
+<h2>2. Гумова таблична верстка</h2>
+<table style="width:100%; border-collapse:collapse; table-layout:fixed;">
+  <tr>
+    <td rowspan="3" style="width:20%; background:orange; text-align:center; vertical-align:middle; color:white;">2</td>
+    <td style="background:blue; color:white; padding:10px; height:50px;">1</td>
+    <td rowspan="3" style="width:3%; background:white;"></td>
+  </tr>
+  <tr>
+    <td style="background:white; text-align:center; vertical-align:middle; color:grey; height:180px;">4</td>
+  </tr>
+  <tr>
+    <td style="background:blue; color:white; padding:10px; height:50px;">3</td>
+  </tr>
+</table>
+
+<h2>3. Фіксована блокова верстка (float)</h2>
+<div style="width:600px; overflow:hidden; background:white;">
+  <div style="float:left; width:120px; height:280px; background:orange; display:flex; align-items:center; justify-content:center; color:white;">2</div>
+  <div style="float:left; width:460px;">
+    <div style="background:blue; color:white; padding:10px; height:50px; box-sizing:border-box; width:440px;">1</div>
+    <div style="background: white; height:180px; display:flex; align-items:center; justify-content:center; color:grey; width:440px;">4</div>
+    <div style="background:blue; color:white; padding:10px; height:50px; box-sizing:border-box; width:440px;">3</div>
+  </div>
+</div>
+
+<h2>4. Гумова блокова верстка (float)</h2>
+<div style="width:100%; overflow:hidden; background:white;">
+  <div style="float:left; width:20%; height:280px; background:orange; display:flex; align-items:center; justify-content:center; color:white;">2</div>
+  <div style="float:left; width:80%;">
+    <div style="background:blue; color:white; font-size:20px; padding:10px; height:50px; box-sizing:border-box; width:97%;">1</div>
+    <div style="background:white; height:180px; display:flex; align-items:center; justify-content:center; color:grey; width:97%;">4</div>
+    <div style="background:blue; color:white; font-size:20px; padding:10px; height:50px; box-sizing:border-box; width:97%;">3</div>
+  </div>
+</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

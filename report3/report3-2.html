@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report3-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report3-2.html">Завдання 1</a></li>
+                <li><a href="report3-3.html">Завдання 2</a></li>
+                <li class="subList"><a href="report3-3-1.html">Фікс. табл.</a></li>
+                <li class="subList"><a href="report3-3-2.html">Гумова табл.</a></li>
+                <li class="subList"><a href="report3-3-3.html">Фікс. блок.</a></li>
+                <li class="subList"><a href="report3-3-4.html">Гумова блок.</a></li>
+                <li><a href="report3-5.html">Висновки</a></li>
+            </ul>
+        </aside>
+        <section id="infoScreen">
+            <h4 style="text-align: center;">HTML</h4>
+            <h4 style="text-align: center;">Головна сторінка</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;lab3&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav id=&quot;navbar&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;mainPage.html&quot;&gt;Main Page&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;ourCakesPage.html&quot;&gt;Our cakes&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;orderPage.html&quot;&gt;Make an Order&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;contactsPage.html&quot;&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    
+    &lt;header&gt;
+        &lt;h1 id=&quot;pageName&quot;&gt;Welcome to &lt;span id=&quot;NiceBakery&quot;&gt;NiceBakery&lt;/span&gt; Webpage&lt;/h1&gt;
+
+        &lt;div id=&quot;headerContainer&quot;&gt;
+            &lt;div class=&quot;mainPageFAQ&quot;&gt;
+                &lt;h3&gt;What does we offer?&lt;/h3&gt;
+                &lt;p&gt;we bake cakes for:&lt;/p&gt;
+                &lt;ol&gt;
+                    &lt;li&gt;weddings&lt;/li&gt;
+                    &lt;li&gt;birthdays&lt;/li&gt;
+                    &lt;li&gt;graduations&lt;/li&gt;
+                    &lt;li&gt;parties&lt;/li&gt;
+                    &lt;li&gt;your special occasions&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;mainPageFAQ&quot;&gt;
+                &lt;h3&gt;What does this website offer?&lt;/h3&gt;
+                &lt;p&gt;this website helps you with:&lt;/p&gt;
+                &lt;ol&gt;
+                    &lt;li&gt;choosing a cake&lt;/li&gt;
+                    &lt;li&gt;contacting us&lt;/li&gt;
+                    &lt;li&gt;learning more about us&lt;/li&gt;
+                    &lt;li&gt;making an order&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;hr&gt;
+
+    &lt;footer&gt;
+        &lt;h3&gt;FAQ&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    How to navigate through the website?
+                    &lt;ul&gt;
+                        &lt;li&gt;use semi-transparent menu in the right upper corner of the page;&lt;/li&gt;
+                        &lt;li&gt;if you use mobile version of the website, use the menu at the very top of the page.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    What does the menus do?
+                    &lt;ul&gt;
+                        &lt;li&gt;Main Page helps you to learn a little bit about us;&lt;/li&gt;
+                        &lt;li&gt;Our Cakes page allows you to learn about our cakes: designs, fillings, pricings;&lt;/li&gt;
+                        &lt;li&gt;Make an Order page allows you to leave an order;&lt;/li&gt;
+                        &lt;li&gt;Conctacts page helps you to reach us: by the phone or in the real life.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h4 style="text-align: center;">Сторінка тортів</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;lab3&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav id=&quot;navbar&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;mainPage.html&quot;&gt;Main Page&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;ourCakesPage.html&quot;&gt;Our cakes&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;orderPage.html&quot;&gt;Make an Order&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;contactsPage.html&quot;&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;header&gt;
+        &lt;h1 id=&quot;pageName&quot;&gt;Check out our cakes&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;hr&gt;
+
+    &lt;main&gt;
+        &lt;div&gt;
+            &lt;h3&gt;Our cakes&lt;/h3&gt;
+            &lt;p&gt;We bake cakes for our customers on request&lt;/p&gt;
+            &lt;p&gt;among our line of cakes we have:&lt;/p&gt;
+            &lt;ul class=&quot;offersTable&quot;&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;wedding cakes&lt;/h4&gt;
+                    &lt;p&gt;we know how important that day is for our clients so we create a unique desing,&lt;br&gt;based on the clients' personal story that represents their lives!&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/wedding-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;birthday cakes&lt;/h4&gt;
+                    &lt;p&gt;from the little kid to the grown adult &ndash; everybody likes to celebrate their birthday,&lt;br&gt;that's why we have a wide range of design choices that will be suitable for any age!&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/birthday-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;graduation cake&lt;/h4&gt;
+                    &lt;p&gt;graduation is a big event in the life of our kids, they made it all the way through&lt;br&gt;so why don't we celebrate it with them!&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/graduation-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;parties cakes&lt;/h4&gt;
+                    &lt;p&gt;whether you are having a small family party or a big corporate one &ndash; we are happy&lt;br&gt;to help you with having everybody pleased with our cakes!&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/party-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;and many more&lt;/h4&gt;
+                    &lt;p&gt;desipte having a wide range of cakes we are actively working on&lt;br&gt;we are not afraid of getting our hands in something new&lt;br&gt;because we are always happy to help you with creating a unique design for your special occasion!&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/many-cakes.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;h3&gt;Our filling&lt;/h3&gt;
+            &lt;p&gt;We have a big range of fillings you can choose from or you can request a special one&lt;/p&gt;
+            &lt;p&gt;among our line of fillings we have:&lt;/p&gt;
+            &lt;ul class=&quot;offersTable&quot;&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;cherry filling&lt;/h4&gt;
+                    &lt;p&gt;good choice for almost every occasion:&lt;br&gt;a little bitter taste, soft texture, sweet aftertaste &ndash; what else can a person desire for a perfect filling?&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/cherry-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;orange filling&lt;/h4&gt;
+                    &lt;p&gt;for those who really like oranges:&lt;br&gt;our orange filling has a little harder texture, a little bitter and a great aftertaste&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/orange-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;strawberry filling&lt;/h4&gt;
+                    &lt;p&gt;if you really like sweet things, this filling is the best option &ndash; you simply can't go wrong with this one&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/strawberry-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;blueberry filling&lt;/h4&gt;
+                    &lt;p&gt;the smoothest filling: smooth texture, smooth taste, smooth everything &ndash; for those, who is looking for semi-sweet taste&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/blueberry-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;banana filling&lt;/h4&gt;
+                    &lt;p&gt;everybody know how banana cake tastes: it is soft, it is light, it is simply ... bananish?&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/banana-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;chocolate filling&lt;/h4&gt;
+                    &lt;p&gt;not a fruit/berry guy? pick a chocolate one &ndash; you won't be dissappointed&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/chocolate-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;nuts filling&lt;/h4&gt;
+                    &lt;p&gt;you can't really mixed that thick, pastery texture with anything else &ndash; for those, who really like nuts&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/nuts-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;h4&gt;and many more&lt;/h4&gt;
+                    &lt;p&gt;although we mainly work with the fillings, mentioned above, we still are more than happy&lt;br&gt;to make your darest dreams about the cake's filling come true&lt;br&gt;so don't hesitate to ask us about your vision of a perfect filling&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/imgs/special-cake.jpg&quot;, width=&quot;300&quot;&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div id=&quot;pricingContainer&quot;&gt;
+            &lt;h3&gt; Our pricing: &lt;/h3&gt;
+            &lt;table id=&quot;pricingTable&quot; bgcolor=&quot;black&quot;&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; id=&quot;infoTable&quot;&gt;Ocassion/Filling&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Cherry&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Orange&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Strawberry&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Blueberry&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Banana&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Chocolate&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Nuts&lt;/th&gt;
+                    &lt;th width=&quot;10%&quot; class=&quot;fillingTable&quot;&gt;Special&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; class=&quot;occasionTable&quot;&gt;Wedding&lt;/th&gt;
+                    &lt;td width=&quot;10%&quot;&gt;200$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;190$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;200$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;250$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;150$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;240$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;230$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+300$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; class=&quot;occasionTable&quot;&gt;Birthday&lt;/th&gt;
+                    &lt;td width=&quot;10%&quot;&gt;100$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;90$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;100$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;150$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;50$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;140$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;130$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+200$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; class=&quot;occasionTable&quot;&gt;Graduation&lt;/th&gt;
+                    &lt;td width=&quot;10%&quot;&gt;125$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;115$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;125$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;175$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;65$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;175$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;155$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+225$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; class=&quot;occasionTable&quot;&gt;Party&lt;/th&gt;
+                    &lt;td width=&quot;10%&quot;&gt;180$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;170$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;180$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;230$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;130$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;220$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot;&gt;210$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+280$&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr bgcolor=&quot;white&quot; align=&quot;center&quot;&gt;
+                    &lt;th width=&quot;20%&quot; class=&quot;occasionTable&quot;&gt;Special&lt;/th&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+250$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+240$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+250$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+300$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+200$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+290$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+270$&lt;/td&gt;
+                    &lt;td width=&quot;10%&quot; class=&quot;specialPrice&quot;&gt;+350$&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;p&gt;*prices for special occasions and fillings are approximate&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;hr&gt;
+
+    &lt;footer&gt;
+        &lt;h3&gt;What is next?&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    How do i make an order?
+                    &lt;ul&gt;
+                        &lt;li&gt;use semi-transparent menu in the right upper corner of the page;&lt;/li&gt;
+                        &lt;li&gt;if you use mobile version of the website, use the menu at the very top of the page;&lt;/li&gt;
+                        &lt;li&gt;click on the Make an Order option to proceed making an order;&lt;/li&gt;
+                        &lt;li&gt;you will be able to choose occassion and filling there.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    I am not sure about decoration, filling or pricing, what do i do?
+                    &lt;ul&gt;
+                        &lt;li&gt;use semi-transparent menu in the right upper corner of the page;&lt;/li&gt;
+                        &lt;li&gt;if you use mobile version of the website, use the menu at the very top of the page;&lt;/li&gt;
+                        &lt;li&gt;click on the Contacts option to learn how to reach us;&lt;/li&gt;
+                        &lt;li&gt;you can reach us by phone or come to our store;&lt;/li&gt;
+                        &lt;li&gt;we will help to customize our cakes specifically for your request;&lt;/li&gt;
+                        &lt;li&gt;don't hesitate to contact us.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h4 style="text-align: center;">Сторінка замовлень</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;lab3&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav id=&quot;navbar&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;mainPage.html&quot;&gt;Main Page&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;ourCakesPage.html&quot;&gt;Our cakes&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;orderPage.html&quot;&gt;Make an Order&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;contactsPage.html&quot;&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;header&gt;
+        &lt;h1 id=&quot;pageName&quot;&gt;Make an order&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;hr&gt;
+
+    &lt;main&gt;
+        &lt;div&gt;
+            &lt;form id=&quot;orderForm&quot;&gt;
+                &lt;div class=&quot;orderElement&quot;&gt;
+                    &lt;h3&gt;1. Choose your occasion&lt;/h3&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;occasion&quot; value=&quot;wedding&quot;&gt;
+                        &lt;label&gt;wedding&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;occasion&quot; value=&quot;birthday&quot;&gt;
+                        &lt;label&gt;birthday&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;occasion&quot; value=&quot;graduation&quot;&gt;
+                        &lt;label&gt;graduation&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;occasion&quot; value=&quot;party&quot;&gt;
+                        &lt;label&gt;party&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;occasion&quot; value=&quot;special&quot;&gt;
+                        &lt;label&gt;special&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;br&gt;
+                        &lt;label&gt;special occasion&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; name=&quot;special_occasion&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;hr&gt;
+
+                &lt;div class=&quot;orderElement&quot;&gt;
+                    &lt;h3&gt;2. Choose your filling&lt;/h3&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;cherry&quot;&gt;
+                        &lt;label&gt;cherry&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;orange&quot;&gt;
+                        &lt;label&gt;orange&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;strawberry&quot;&gt;
+                        &lt;label&gt;strawberry&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;blueberry&quot;&gt;
+                        &lt;label&gt;blueberry&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;banana&quot;&gt;
+                        &lt;label&gt;banana&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;chocolate&quot;&gt;
+                        &lt;label&gt;chocolate&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;nuts&quot;&gt;
+                        &lt;label&gt;nuts&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;filling&quot; value=&quot;special&quot;&gt;
+                        &lt;label&gt;special&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;br&gt;
+                        &lt;label&gt;special filling&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; name=&quot;special_filling&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;hr&gt;
+
+                &lt;div class=&quot;orderElement&quot;&gt;
+                    &lt;h3&gt;3. Leave your phone number&lt;/h3&gt;
+                    &lt;label for=&quot;phone&quot;&gt;Phone number:&lt;/label&gt;
+                    &lt;input id=&quot;phone&quot; name=&quot;phone&quot; type=&quot;tel&quot; pattern=&quot;0[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}&quot; placeholder=&quot;0123456789&quot;&gt;
+                    &lt;br&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;reset&quot;&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;hr&gt;
+
+    &lt;footer&gt;
+        &lt;h3&gt;What is next?&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    I filled up the form, what is next?
+                    &lt;ul&gt;
+                        &lt;li&gt;we will contact you within our schedule;&lt;/li&gt;
+                        &lt;li&gt;you can check our schedule on the Contacts page.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    I don't want to wait, what do i do?
+                    &lt;ul&gt;
+                        &lt;li&gt;our workers usually deal with the orders within 3 days after placing an order;&lt;/li&gt;
+                        &lt;li&gt;if 3 days already gone, you can call us to be updated on you order's status;&lt;/li&gt;
+                        &lt;li&gt;you can check how to reach us on the Contacts page.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    How do I reach you?
+                    &lt;ul&gt;
+                        &lt;li&gt;use semi-transparent menu in the right upper corner of the page;&lt;/li&gt;
+                        &lt;li&gt;if you use mobile version of the website, use the menu at the very top of the page;&lt;/li&gt;
+                        &lt;li&gt;click on Contacts option;&lt;/li&gt;
+                        &lt;li&gt;contacts page will provide you will all the information you need to reach us.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h4 style="text-align: center;">Сторінка контактів</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;lab3&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav  id=&quot;navbar&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;mainPage.html&quot;&gt;Main Page&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;ourCakesPage.html&quot;&gt;Our cakes&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;orderPage.html&quot;&gt;Make an Order&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;contactsPage.html&quot;&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;header&gt;
+        &lt;h1 id=&quot;pageName&quot;&gt;Our contacts&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;hr&gt;
+
+    &lt;main&gt;
+        &lt;h3&gt;How to reach us?&lt;/h3&gt;
+        &lt;ul id=&quot;contactContainer&quot;&gt;
+            &lt;li&gt;
+                Call us by one of our numbers:
+                &lt;ul&gt;
+                    &lt;li&gt;012-345-67-89&lt;/li&gt;
+                    &lt;li&gt;098-765-43-21&lt;/li&gt;
+                    &lt;li&gt;011-222-33-44&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;br&gt;
+            &lt;li&gt;
+                Let us call you back:
+                &lt;br&gt;
+                &lt;form&gt;
+                    &lt;label for=&quot;phone&quot;&gt;Phone number:&lt;/label&gt;
+                    &lt;input id=&quot;phone&quot; name=&quot;phone&quot; type=&quot;tel&quot; pattern=&quot;0[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}&quot; placeholder=&quot;0123456789&quot;&gt;
+                    &lt;div&gt;
+                        &lt;input type=&quot;reset&quot;&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+                &lt;br&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Or visit our bakery:
+                &lt;p&gt;Kyiv, 1 Kyivska street&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;hr&gt;
+        &lt;h3&gt; Our schedule: &lt;/h3&gt;
+        &lt;table bgcolor=&quot;black&quot; id=&quot;scheduleTable&quot;&gt;
+            &lt;tr bgcolor=&quot;white&quot;&gt;
+                &lt;th width=&quot;100&quot;&gt;Monday-Thursday&lt;/th&gt;
+                &lt;td width=&quot;100&quot;&gt;10:00-20:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr bgcolor=&quot;white&quot;&gt;
+                &lt;th width=&quot;100&quot;&gt;Friday&lt;/th&gt;
+                &lt;td width=&quot;100&quot;&gt;10:00-18:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr bgcolor=&quot;white&quot;&gt;
+                &lt;th width=&quot;100&quot;&gt;Saturday-Sunday&lt;/th&gt;
+                &lt;td width=&quot;100&quot;&gt;12:00-16:00&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/main&gt;
+
+    &lt;hr&gt;
+
+    &lt;footer&gt;
+        &lt;h3&gt;What is next?&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;
+                    My call wasn't recieved, what do i do?
+                    &lt;ul&gt;
+                        &lt;li&gt;please, check our schedule &ndash; we can answer call only during open hours;&lt;/li&gt;
+                        &lt;li&gt;if you called within our open hours and we still didn't answer, please wait for another 30 to 60 minutes &ndash; we will call you back as soon as possible.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    I send my number through the form, what do i do now?
+                    &lt;ul&gt;
+                        &lt;li&gt;our workers usually deal with the call back requests within 3 days after sending the form;&lt;/li&gt;
+                        &lt;li&gt;if 3 days already gone, you can call us, send another call back form or visit our store in person.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+
+            <h4 style="text-align: center;">CSS</h4>
+            <pre><code>
+body{
+    background-image: url(&quot;../imgs/background-cake.jpg&quot;);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+#pageName{
+    text-align: center;
+}
+
+#NiceBakery{
+    color: #B77466;
+    text-shadow: -3px -3px 3px #E2B59A, 3px 3px 3px #E2B59A;
+    font-family: 'Brush Script MT';
+    font-size: larger;
+}
+
+header, main{
+    background: linear-gradient(to right, #FFE1AF, #ffe2affa, #ffe2aff5, #ffe2afe9);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+nav ul{
+    list-style-type: circle;
+}
+
+.mainPageFAQ &gt; h3{
+    font-family:monospace;
+}
+
+#pricingTable{
+    background-color: #400c02;
+}
+
+#pricingTable tr{
+    background-color: #d0c1be;
+}
+
+#infoTable{
+    background-color: #B77466;
+}
+.fillingTable{
+    background-color: #c8614d;
+}
+.occasionTable{
+    background-color: #e7c3bc;
+}
+
+.specialPrice{
+    color: #671505;
+}
+
+#orderForm input[value] + label{
+    font-family: 'Monaco';
+}
+
+#scheduleTable{
+    background-color: #400c02;
+}
+
+#scheduleTable th{
+    background-color: #B77466;
+}
+
+#scheduleTable td{
+    background-color: #d0c1be;
+}
+
+input{
+    background-color: #eadfdd;
+}
+
+#headerContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    animation: hideMenu;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#navbar ul{
+	list-style-type: none;
+	background-color: #400c02;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#navbar a{
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+#navbar a:hover{
+	background-color: #240701;
+}
+
+#orderForm{
+    display: flex;
+}
+
+.orderElement{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 900px){
+    #navbar{
+        position: static;
+        display: block;
+        animation: showMenu;
+        animation-fill-mode: forwards;
+    }
+    #orderForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .offersTable{
+        display: flex;
+        row-gap: 2em;
+        flex-direction: column;
+    }
+    .offersTable li{
+        display: flex;
+        row-gap: 2em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offersTable li:active{
+        background-color: #cb8b64;
+    }
+}
+
+#pricingContainer{
+    overflow-x: auto;
+}
+
+.offersTable{
+    display: flex;
+    column-gap: 2em;
+    row-gap: 2em;
+    overflow-x: auto;
+}
+.offersTable li{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E2B59A;
+    padding: 5px;
+}
+
+.offersTable li h4{
+    text-align: center;
+}
+
+#navbar:hover{
+    animation: showMenu;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showMenu{
+    to{opacity: 100%;}
+}
+
+@keyframes hideMenu{
+    to{opacity: 20%;}
+}
+
+#contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer{
+    background-color: #400c02;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: small;
+}
+
+footer h3{
+    text-align: center;
+}
+
+.offersTable li:hover{
+    background-color: #cb8b64;
+}
+            </code></pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -44,6 +44,45 @@
         </aside>
 
         <section id="infoScreen">
+            <h4 style="text-align: center;">In-line</h4>
+            <p>В даному випадку керування усіма атрибутами стилю (style) відбувється безпосередньо всередині
+                тегу.
+            </p>
+            <p>&lt;p style=&quot;background-color: gray; color: white&quot;&gt;Example paragraph&lt;/p&gt;</p>
+            <h4 style="text-align: center;">Internal</h4>
+            <p>В цьому випадку стильове оформлення відбувається за допомогою тегу style в самому HTML документі</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt; My first website &lt;/title&gt;
+		&lt;style&gt;
+			body{
+				background-color: black;
+			}
+			h1{
+				color: white;
+			}
+			p{
+				background-color: gray;
+				color: white;
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	
+		&lt;h1&gt;Example&lt;/h1&gt;
+		
+		&lt;p&gt;Example paragraph&lt;/p&gt;
+		&lt;p&gt;Example paragraph&lt;/p&gt;
+		&lt;p&gt;Example paragraph&lt;/p&gt;
+	
+	&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h4 style="text-align: center;">External</h4>
+            <p>В цьому випадку стильнове оформлення виноситься в окремий файл, який підключається в HTML документі</p>
+            <p>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</p>
         </section>
     </main>
 </body>

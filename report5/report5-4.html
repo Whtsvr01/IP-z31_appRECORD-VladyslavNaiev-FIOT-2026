@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report5-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report5-2.html">Завдання 1-2</a></li>
+                <li><a href="report5-3.html">Завдання 1-4</a></li>
+                <li><a href="report5-4.html">Завдання 1-6</a></li>
+                <li><a href="report5-5.html">Завдання 1-8</a></li>
+                <li><a href="report5-6.html">Завдання 1-9</a></li>
+                <li><a href="report5-7.html">Завдання 1-10</a></li>
+                <li><a href="report5-8.html">Завдання 2-2</a></li>
+                <li><a href="report5-9.html">Завдання 2-4</a></li>
+                <li><a href="report5-10.html">Завдання 2-6</a></li>
+                <li><a href="report5-11.html">Завдання 2-7</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <h4 style="text-align: center;">Javascript</h4>
+            <pre><code>
+const medicines = [{name: &quot;Noshpa&quot;, price: 170}, {name: &quot;Analgin&quot;, price: 55}, {name: &quot;Quanil&quot;, price: 310}, {name: &quot;Alphacholine&quot;, price: 390}];
+
+function discountApply(items){
+    newItems = items.map((item, i) =&gt; ({
+        name: item.name,
+        price: item.price &gt; 300 ? item.price * 0.7 : item.price,
+        id: i + 1
+    }));
+    return newItems;
+}
+console.log(&quot;Old medicines\n&quot;, medicines);
+console.log(&quot;New medicines\n&quot;, (discountApply(medicines)));
+            </code></pre>
+
+            <h4 style="text-align: center;">Скріншоти</h4>
+            <img src="imgs5/4.png">
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h3>
+            <h3>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h3>
+            <h5>Виконавець: Студент групи ІП-з31 ПІБ</h5>
+        </div>
+        <br>
+        <img src="../student-image.jpg" height="100">
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../report1/report1.html">Лабораторна <br> робота №1</a></li>
+            <li><a href="../report2/report2.html">Лабораторна <br> робота №2</a></li>
+            <li><a href="../report3/report3.html">Лабораторна <br> робота №3</a></li>
+            <li><a href="../report4/report4.html">Лабораторна <br> робота №4</a></li>
+            <li><a href="../report5/report5.html">Лабораторна <br> робота №5</a></li>
+            <li><a href="../report6/report6.html">Лабораторна <br> робота №6</a></li>
+            <li><a href="../report7/report7.html">Лабораторна <br> робота №7</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="report6-1.html">Тема, мета, місце розташування</a></li>
+                <li><a href="report6-2.html">Завдання 2</a></li>
+                <li><a href="report6-3.html">Завдання 4</a></li>
+                <li><a href="report6-4.html">Завдання 6</a></li>
+                <li><a href="report6-5.html">Завдання 7</a></li>
+                <li><a href="report6-6.html">Завдання 8</a></li>
+                <li><a href="report6-7.html">Завдання 9</a></li>
+                <li><a href="report6-8.html">Завдання 10</a></li>
+            </ul>
+        </aside>
+
+        <section id="infoScreen">
+            <h4 style="text-align: center;">Javascript</h4>
+            <pre><code>
+const loginForm = document.querySelector(&quot;.login-form&quot;);
+loginForm.addEventListener(&quot;submit&quot;, event =&gt;{
+    event.preventDefault();
+
+    let emailUser = loginForm.elements.email;
+    let passwordUser = loginForm.elements.password;
+
+    if (emailUser.value == null || emailUser.value.trim() === &quot;&quot; || passwordUser.value == null || passwordUser.value.trim() === &quot;&quot;){
+        alert(&quot;All form fields must be filled in&quot;);
+    }
+    else{
+        let credentials = {email : emailUser.value.trim(), password : passwordUser.value.trim()};
+        console.log(credentials);
+        loginForm.reset();
+    }
+});
+            </code></pre>
+
+            <h4 style="text-align: center;">HTML</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style=&quot;background-color: green; padding: 15px; border: 3px solid black;&quot;&gt;
+        &lt;form class=&quot;login-form&quot;&gt;
+            &lt;label&gt;
+                Email
+                &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+            &lt;/label&gt;
+            &lt;label&gt;
+                Password
+                &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;
+            &lt;/label&gt;
+            &lt;button type=&quot;submit&quot;&gt;Log in&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;              
+            </code></pre>
+            
+            <h4 style="text-align: center;">Скріншоти</h4>
+            <img src="imgs6/8.png">
+            <img src="imgs6/9.png">
+        </section>
+    </main>
+</body>
+</html>
